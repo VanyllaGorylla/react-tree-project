@@ -1,0 +1,73 @@
+{
+  "name": "react-tree-project",
+  "version": "0.0.1",
+  "description": "Tree component for React.",
+  "keywords": [
+    "React",
+    "tree",
+    "react-tree-project",
+    "typescript"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VanyllaGorylla/react-tree-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/VanyllaGorylla/react-tree-project/issues"
+  },
+  "homepage": "https://github.com/VanyllaGorylla/react-tree-project#readme",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "license": "MIT",
+  "main": "dist/index.bundle.js",
+  "types": "dist/lib-esm/index.d.ts",
+  "module": "dist/lib-esm/index.js",
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@storybook/addon-info": "^5.3.19",
+    "@types/fbemitter": "^2.0.32",
+    "@types/jest": "^26.0.8",
+    "@types/lodash": "^4.14.157",
+    "@types/react": "^16.9.41",
+    "@types/react-dom": "^16.9.8",
+    "add": "^2.0.6",
+    "css-loader": "^3.6.0",
+    "filemanager-webpack-plugin": "^2.0.5",
+    "filemanager-webpack-plugin-fixed": "^2.0.9",
+    "html-webpack-plugin": "^4.3.0",
+    "jest": "^26.2.2",
+    "lodash": "^4.17.19",
+    "mini-css-extract-plugin": "^0.9.0",
+    "react": "^16.13.1",
+    "react-docgen-typescript-loader": "^3.7.2",
+    "react-dom": "^16.13.1",
+    "sass": "^1.26.10",
+    "sass-loader": "^9.0.1",
+    "source-map-loader": "^1.0.1",
+    "style-loader": "^1.2.1",
+    "ts-jest": "^26.1.4",
+    "ts-loader": "^7.0.5",
+    "typescript": "^3.9.6",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "yarn": "^1.22.4"
+  },
+  "peerDependencies": {
+    "lodash": "^4.17.19",
+    "react": "^16.13.1"
+  },
+  "scripts": {
+    "init-ts": "tsc --init",
+    "build:umd": "webpack --config webpack-prod.config.js",
+    "build:esm": "tsc -m es6 --outDir dist/lib-esm",
+    "build:style": "sass ./src/style/index.scss ./dist/style/main.css",
+    "storybook": "start-storybook --port 4321"
+  },
+  "dependencies": {
+    "@storybook/react": "^5.3.19",
+    "babel-loader": "^8.1.0"
+  }
+}

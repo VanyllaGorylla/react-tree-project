@@ -1,0 +1,48 @@
+$react-tree-app-bg-color: #3d405b;
+$react-tree-app-primary-color: #81b29a;
+$react-tree-app-secondary-color: #f4f1de;
+$react-tree-app-error-color: #e07a5f;
+$react-tree-app-warning-color: #f2cc8f;
+
+.react-tree-project {
+  background-color: $react-tree-app-bg-color;
+  color: $react-tree-app-primary-color;
+  width: 100%;
+
+  &__leaf {
+    width: auto;
+    min-height: 20px;
+    border-bottom: 1px solid $react-tree-app-primary-color;
+    margin-bottom: 10px;
+    padding: 8px 0px 8px 24px;
+
+    &:last-child {
+      margin-bottom: 0px;
+    }
+
+    &__header {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+
+    &__header__title {
+      flex: 1 1 calc(100%-20px);
+      cursor: grab;
+    }
+
+    &__header__expand {
+      flex-grow: 0;
+      flex-shrink: 0;
+      flex-basis: 20px;
+
+      &--expandable {
+        cursor: pointer;
+      }
+    }
+
+    &__body {
+      width: 100%;
+    }
+  }
+}
