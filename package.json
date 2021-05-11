@@ -39,7 +39,7 @@
     "filemanager-webpack-plugin-fixed": "^2.0.9",
     "html-webpack-plugin": "^4.3.0",
     "jest": "^26.2.2",
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "mini-css-extract-plugin": "^0.9.0",
     "react": "^16.13.1",
     "react-docgen-typescript-loader": "^3.7.2",
@@ -56,7 +56,7 @@
     "yarn": "^1.22.4"
   },
   "peerDependencies": {
-    "lodash": "^4.17.19",
+    "lodash": "^4.17.21",
     "react": "^16.13.1"
   },
   "scripts": {
